@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section class="work-full">
+  <div class="wrap">
+    <img src="{{ site.url }}/{{ page.portfolio_item_hero }}" alt="Hero for {{ page.title }}" />
+  </div><!-- end .wrap -->
+</section>
+
+<div class="projects">
+  <div class="content">
+    <div class="contain">
+
+    <h2>{{ page.title }}<small>Work Project</small></h2>
+    <ul class="project-info">
+      <li><strong>Role:</strong> {{ page.portfolio_item_role }}</li>
+      <li><strong>Type:</strong> {{ page.portfolio_item_type }}</li>
+      {% if page.portfolio_item_url %}
+      <li><a href="{{ page.portfolio_item_url }}">Visit Project</a></li>
+      {% endif %}
+    </ul>
+
+    {{ content }}
+
+    </div><!-- .contain -->
+  </div><!-- .content -->
+</div><!-- .projects -->

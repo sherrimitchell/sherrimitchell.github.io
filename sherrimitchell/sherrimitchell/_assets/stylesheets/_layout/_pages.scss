@@ -1,0 +1,190 @@
+/*
+
+PAGE STYLES
+------------------------------------------- */
+
+// About Page Styles
+
+.published {
+  list-style-type: none;
+  margin: 0;
+  li {
+    border-bottom: 1px solid $borderColor;
+    padding: 4% 0;
+    line-height: 130%;
+    @include transition(background .2s ease-in-out);
+    &:hover {
+      background: lighten($borderColor, 5%);
+    }
+    &:last-child {
+      border-bottom: none;
+      padding: 4% 0;
+    }
+    a {
+      color: $jazzColor;
+      display: block;
+      border-bottom: none;
+      font-size: .95em;
+      text-decoration: none !important;
+      &:hover {
+        color: darken($jazzColor, 20%);
+      }
+      small {
+        color: lighten($darkColor, 40%);
+        display: block;
+        font-size: .8em;
+      }
+    }
+  }
+}
+
+.half-col {
+  width: 45%;
+  float: left;
+  overflow: hidden;
+  @media screen and (max-width: 700px ) {
+    width: 50%;
+  }
+  @media screen and (max-width: 450px ) {
+    width: 100%;
+    float: none;
+  }
+  h3 {
+    margin: 5% 0 2% 0;
+  }
+  &.left {
+    margin: 0 0 0 10%;
+    padding-right: 02.34375%;
+    @media screen and (max-width: 700px ) {
+      margin: 0;
+    }
+    @media screen and (max-width: 450px ) {
+      padding-right: 0;
+    }
+  }
+  &.right {
+    padding-left: 02.34375%;
+    @media screen and (max-width: 450px ) {
+      padding-left: 0;
+    }
+  }
+}
+
+
+// Archive Page Styles
+
+.archive-list {
+  li {
+    font-size: 1em;
+  }
+}
+
+
+
+//Portfolio Styles
+
+.format-portfolio-item {
+  h2 {
+    font-weight: 800;
+    a {
+      border-bottom: none;
+      color: $darkColor;
+      font-weight: 800;
+      text-decoration: none !important;
+      &:hover {
+        color: $linkColor;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.projects {
+  h2 {
+    font-size: 2em;
+    font-weight: 800;
+    small {
+      color: lighten($darkColor, 50%);
+      display: block;
+      font-size: .5em;
+      line-height: 100%;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.format-projects-item {
+  h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 165%;
+    margin-bottom: .5%;
+  }
+  span {
+    vertical-align: middle;
+  }
+}
+
+.cta {
+  background: $jazzColor;
+  padding: 3% 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  a {
+    color: darken($jazzColor, 40%);
+    border-bottom: none;
+    &:hover {
+      color: darken($jazzColor, 30%);
+    }
+  }
+}
+
+.work-full {
+  margin: 8% 5%;
+  max-width: 1700px;
+}
+
+.project-info {
+  list-style-type: none;
+  margin: 0 0 8% 10%;
+  @media screen and (max-width: 700px ) {
+    margin: 0 0 8% 0;
+  }
+  li {
+    border-bottom: 1px solid $borderColor;
+    font-size: .95em;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+// Search Styles
+
+#search-results {
+  margin: 5% 0 0;
+}
+
+.search-results-list {
+  margin: 0 0 0 10%;
+  list-style-type: none;
+  p {
+    margin: 0;
+  }
+  li {
+    a {
+      color: $linkColor;
+      text-decoration: none;
+      @include transition(.2s ease-in-out);
+      &:hover {
+        color: darken($linkColor, 15%);
+      }
+    }
+    small {
+      color: lighten($darkColor, 45%);
+      font-size: .85em;
+      margin: 0 0 0 10px;
+    }
+  }
+}

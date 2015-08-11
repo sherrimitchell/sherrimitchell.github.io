@@ -1,0 +1,47 @@
+# Site settings
+name: Sherri Mitchell
+title: "Super awesome Ruby on Rails developer."
+email: rsamitchell@att.net
+description: > # this means to ignore newlines until "baseurl:"
+  "Sherri Mitchell is a software developer based in Atlanta, Georgia."
+url: "http://sherrimitchell.github.io" # the base hostname & protocol for your site
+baseurl: "/sherrimitchell" # the subpath of your site, e.g. /blog/
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:title
+paginate: 20
+exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
+include: ['.htaccess']
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed
+timezone: America/Atlanta
+post:
+  extension: md
+
+# Collection
+collections:
+  work:
+    output: true
+    permalink: /portfolio/:path/
+
+pygments: true
+
+# Add Plugins
+plugins:
+  - jekyll-assets
+
+# assets
+ assets:
+    dirname: assets # _assets
+    baseurl: /blog/assets/
+    sources: # asset subdirectories
+        - _assets/stylesheets
+        - _assets/javascripts
+        - _assets/javascripts/vendor # added
+        - _assets/images
+    cachebust: hard
+    js_compressor: uglifier # included by rails
+    css_compressor: sass # included by rails
+
