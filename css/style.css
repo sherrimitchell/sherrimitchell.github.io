@@ -1,49 +1,13 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
+html {
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-p {
-  line-height: 2rem;
+html {
+  overflow-x: hidden;
 }
 
-.button-collapse {
-  color: #26a69a;
-}
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
+#about, #team{
+  background-color: #eeeeee !important; }
 
 .icon-block {
   padding: 0 15px;
@@ -53,5 +17,285 @@ p {
 }
 
 footer.page-footer {
-  margin: 0;
+    margin-top: 0px !important;
 }
+
+
+.footer-contact {
+  color: white;
+}
+
+.footer-icon {
+  color: white;
+}
+
+.footer-finale {
+  font-size: 13px;
+  color: white;
+}
+
+/* Progress */
+.ruby {
+  height: 40px;
+  background-color: #DE5D61 !important;
+   }
+  .progress .determinate {
+    background-color: #D0181E !important;
+  }
+
+.section-link {
+  margin-top: -100px;
+  padding-top: 100px;
+}
+
+.inner-section-link {
+  margin-top: -150px;
+  padding-top: 150px;
+}
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+figure.effect-bubba {
+  background: white;
+}
+
+figure.effect-bubba img {
+  opacity: 0.7;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+  opacity: 0.4;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+}
+
+figure.effect-bubba h2 {
+  padding-top: 30%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,-20px,0);
+  transform: translate3d(0,-20px,0);
+}
+
+figure.effect-bubba p {
+  padding: 20px 2.5em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
+/* Navbar */
+.navbar-fixed {
+  z-index: 999;
+  background-color: #424242;
+}
+
+.navbar-fixed nav .brand-logo {
+  font-weight: 100;
+  font-size: 1.3em;
+}
+
+nav li a {
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out;
+}
+
+nav li a.active {
+  color: #000;
+  background: #424242 !important;
+}
+
+@media {
+  .brand-logo {
+    font-weight: 100;
+    font-size: 0.7em;
+  }
+
+  .brand-logo b {
+    font-weight: 800;
+  }
+
+  nav li a {
+    font-size: 0.7em;
+  }
+
+/*  Default Styles  */
+.default_color_header {
+  color: #355364;
+}
+
+.default_color {
+    background-color: #353b64 !important;
+}
+
+.default_color_text{color: #2196F3 !important;
+}
+
+.default_color_work{color: #eeeeee !important;
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.non-fluid {
+  font-size: 1.2em;
+}
+
+.weight-100 {
+  font-weight: 100;
+}
+
+.weight-300 {
+  font-weight: 300;
+}
+
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.weight-800 {
+  font-weight: 800;
+}
+
+/* Card */
+.card {height: 430px;
+  width: 300px;
+}
+
+.card .waves-effect {
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.card .card-content {
+    text-align: center;
+}
+
+ .card .card-content {
+    height: 120px;
+}
+
+.card .card-content {
+    padding: 10px;
+}
+.card .card-content i {
+   font-size: 1.5rem;
+}
+
+.card .card-content .card-title {
+    line-height: 30px !important;
+}
+
+.card .card-title {
+    font-size: 16px;
+}
+
+.card .card-content p {
+     font-size: 12; }
+
+.card .card-image img {
+  height: 320px;
+}
+
+.card .card-reveal p {
+    font-size: 12px !important;
+    color: #212121 !important;; }
+
+    /*Card Button*/
+ 
+.code-card-btn {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #4F69A0;
+  text-align: center;
+  letter-spacing: 0.5px;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  cursor: pointer; }
+  .code-card-btn:hover{
+    background-color: #6586C7; }
+
+    .code-card-btn {
+  display: inline-block;
+  height: 38px;
+  margin-bottom: 5px;
+  padding: 0 2rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;}
