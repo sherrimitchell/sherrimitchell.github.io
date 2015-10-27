@@ -180,7 +180,7 @@ nav li a.active {
     background-color: #353b64 !important;
 }
 
-.default_color_text{color: #2196F3 !important;
+.default_color_text{color: #9ea8ba !important;
 }
 
 .default_color_work{color: #eeeeee !important;
@@ -299,3 +299,10 @@ nav li a.active {
   border: none;
   outline: 0;
   -webkit-tap-highlight-color: transparent;}
+
+  /*Jake Slider*/
+  #jake {
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
